@@ -12,13 +12,14 @@ while running:
     print('| Three doors lay ahead...                                        |')
     print('| Death sleeps behind one...                                      |')
     print('| Which door do you open..?                                       |')
-    door = input('| 1, 2 or 3 = ') 
+    door = input('| 1, 2 or 3 = ').lower()
     door_num = int(door)
     if door_num == doors:
         time.sleep(1.5)
         print('-------------------------------------------------------------------')
         print('| Its Death!                                                      |')
-        print('| Game over! You survived going through', score, 'doors!                  |')
+        print('| Game over! You survived going through',
+              score, 'doors!                  |')
         print('-------------------------------------------------------------------')
         time.sleep(6)
         running = False
